@@ -1,16 +1,20 @@
-# tester
+# Simple Task List (Web)
+A lightweight web-only todo app built with plain HTML, CSS, and JavaScript.
 
+## Features
+- Add tasks
+- Mark tasks complete/incomplete
+- Delete tasks
+- Clear completed tasks
+- Local persistence using `localStorage`
 
-this added in Obs
-this added in Github
-This android
-this now desktop
+## Run locally
+Open `index.html` in your browser.
 
-Mobile new day
-
-This
-Is new
-2
-WEB GIT
+For a local server, you can run:
+```bash
+python3 -m http.server 8000
+```
+Then visit `http://localhost:8000`.
 
 

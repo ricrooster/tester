@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Task List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Task List</h1>
+
+    <form id="todo-form" class="todo-form" autocomplete="off">
+      <label class="visually-hidden" for="todo-input">Add a task</label>
+      <input
+        id="todo-input"
+        name="todo"
+        type="text"
+        placeholder="Add a task..."
+        maxlength="120"
+        required
+      >
+      <button type="submit">Add</button>
+    </form>
+
+    <section class="todo-panel" aria-live="polite">
+      <ul id="todo-list" class="todo-list"></ul>
+      <p id="empty-state" class="empty-state">No tasks yet. Add your first task.</p>
+    </section>
+
+    <footer class="footer">
+      <span id="task-count">0 tasks</span>
+      <button id="clear-completed" type="button" class="secondary">Clear completed</button>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
